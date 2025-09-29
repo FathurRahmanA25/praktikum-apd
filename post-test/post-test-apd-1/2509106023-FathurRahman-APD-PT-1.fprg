@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="post test fathur"/>
+        <attribute name="authors" value="Bintang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-13 12:05:52 PM"/>
+        <attribute name="created" value="QmludGFuZztERVNLVE9QLTVUQzAxTjI7MjAyNS0wOS0xMzswODo0NDozNyBBTTsyOTk2"/>
+        <attribute name="edited" value="QmludGFuZztERVNLVE9QLTVUQzAxTjI7MjAyNS0wOS0xMzsxMjowNTo1MiBQTTsxOzMxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai" type="Integer" array="False" size=""/>
+            <declare name="keterangan" type="String" array="False" size=""/>
+            <output expression="&quot;dimasukkan nilai&quot;" newline="True"/>
+            <input variable="nilai"/>
+            <if expression="nilai&gt;=80">
+                <then>
+                    <assign variable="keterangan" expression="&quot;A&quot;"/>
+                </then>
+                <else>
+                    <if expression="nilai&gt;=70">
+                        <then>
+                            <assign variable="keterangan" expression="&quot;B&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="nilai&gt;=60">
+                                <then>
+                                    <assign variable="keterangan" expression="&quot;C&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="nilai &lt; 60">
+                                        <then>
+                                            <assign variable="keterangan" expression="&quot;D&quot;"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="keterangan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
