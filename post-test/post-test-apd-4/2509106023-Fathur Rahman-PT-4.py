@@ -15,7 +15,7 @@ produk = {
     "4": ("Sikat gigi", 8000)
 }
 
-while True:
+while True:  
     if member == "y":
         kesempatan = 3
         while kesempatan > 0:
