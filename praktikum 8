@@ -1,0 +1,167 @@
+[08.05, 30/10/2025] +62 812-5452-8340: import random
+print(random.randint(1, 5)) # menghasilkan angka random dari 1 - 4
+pilih_acak = ["pisang", "rambutan", "manggis"]
+acak = "apcb"
+print(random.choice(pilih_acak)) # memilih 1 element secara acak pada list
+print(random.choice(acak)) # memilih 1 karakter acak pada string
+# memasukkan satu persatu nilai dari kumpulan_angka
+# ke dalam variabel hasil dengan isinya 4 karakter hasil randomize
+kumpulan_angka = "1234567890"
+hasil = ""
+for i in range(4):
+    hasil += random.choice(kumpulan_angka)
+print(hasil)
+
+acak_kartu = ["1 wajik", "3 wajik", "5 wajik"]
+random.shuffle(acak_kartu) # kocok kartu, output berupa urutan list yang
+print(acak_kartu)
+[08.30, 30/10/2025] +62 812-5452-8340: import inquirer
+
+# Buat pertanyaan dengan pilihan yang bisa dipilih pakai panah
+pertanyaan = [
+    inquirer.List(
+        'bahasa',
+        message="Pilih bahasa pemrograman favoritmu:",
+        choices=['Python', 'JavaScript', 'Java', 'C++', 'Go']
+    )
+]
+
+# Jalankan pertanyaan
+jawaban = inquirer.prompt(pertanyaan)
+
+# Tampilkan hasil
+print(f"\nKamu memilih: {jawaban['bahasa']} ✨")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import inquirer
+# pertanyaan = [
+# inquirer.List(
+# '',
+# message="What size do you need?",
+# choices=['Jumbo', 'Large', 'Standard', 'Medium', 'Small', 'Micro'],
+# ),
+# ]
+# # mendapatkan jawaban
+# answer = inquirer.prompt(pertanyaan)
+# print(answer) # Output dalam bentuk Dictionary {'size': 'Large'}
+# print(answer['size']) # Ambil value dari key 'size' (Large)
+
+
+
+
+
+
+
+
+
+# from prettytable import prettytable
+# table = prettytable()
+
+# table.field_names = ["Nim", "Nama", "Alamat"]
+# table.add_row(["001", "fatur", "Informatika"])
+# table.add_row(["002", "ucup", "kalkulus"])
+# table.add_row(["003", "fauzi", "orsikom"])
+# print(table)
+# print (table.get_string())
+
+
+
+#import
+# random
+#print(random.randint(1, 5)) # menghasilkan angka random dari 1 - 4
+#pilih_acak = ["pisang", "rambutan", "manggis"]
+#acak = "apcb"
+#print(random.choice(pilih_acak)) # memilih 1 element secara acak pada list
+#print(random.choice(acak)) # memilih 1 karakter acak pada string
+# memasukkan satu persatu nilai dari kumpulan_angka
+# ke dalam variabel hasil dengan isinya 4 karakter hasil randomize
+#kumpulan_angka = "1234567890"
+#hasil = ""
+#or i in range(4):
+#hasil += random.choice(kumpulan_angka)
+#print(hasil)
+
+#acak_kartu = ["1 wajik", "3 wajik", "5 wajik"]
+#random.shuffle(acak_kartu) # kocok kartu, output berupa urutan list yang
+#berubah
+#print(acak_kartu)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#num = int("42") # 42
+#name = str(123) # "123"
+#data = list("abc") # ['a', 'b', 'c']
+#data = dict(a=1, b=2) # {'a': 1, 'b': 2}
+#print(type(num)) # <class 'int'>
+
+#abs(-9) # 9
+#max([1, 3, 7]) # 7
+#min([1, 3, 7]) # 1
+#round(3.14159,2) # 3.14
+#sum([1, 2, 3]) # 6
+
+
+
+
+
+
+#for i, v in enumerate(['a','b']):
+#print(i, v) # 0 a , 1 b
+#len([10, 20, 30]) # 3
+#list(map(str, [1,2,3])) # ['1', '2', '3']
+#sorted([3, 1, 2]) # [1, 2, 3]
+#list(zip([1,2],['a','b'])) # [(1,'a'), (2,'b')]
+
+
+
+
+
+
+
+
+#x = 42
+#def fungsi():
+#x = 10
+#y = 20
+#z = 30
+#print(globals()['x'])
+#print(locals()['x'])
+#print(locals())
+#fungsi()
+
+#nama = input('Masukkan nama kalian ')
+#print(nama.upper())
