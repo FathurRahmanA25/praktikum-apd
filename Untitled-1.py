@@ -1,13 +1,17 @@
-nama_mahasiswa = ["Andi", "Faris", "Mozart"]
-print("Data awal:", nama_mahasiswa)
 
-nama_baru = input("Masukkan nama baru: ")
-nama_mahasiswa.append(nama_baru)
-print("Data setelah ditambah:", nama_mahasiswa)
+with open("nilai.txt", "w") as f:
+    f.write("80\n75\n90\n60\n85\n")
 
-nama = input("Masukkan nama: ")
-nim = input("Masukkan NIM: ")
-jurusan = input("Masukkan jurusan: ")
+total = 0
+jumlah = 0
 
-data_mahasiswa = (nama, nim, jurusan)
-print("Hasil tuple:", data_mahasiswa)
+with open("nilai.txt", "r") as f:
+    for baris in f:
+        nilai = int(baris.strip())
+        total += nilai
+        jumlah += 1
+
+rata_rata = total / jumlah
+
+print("Daftar nilai disimpan di file 'nilai.txt'")
+print("Rata-rata nilainya adalah:", rata_rata)
